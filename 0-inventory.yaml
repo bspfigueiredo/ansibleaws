@@ -1,0 +1,9 @@
+
+[redis]
+15.236.209.94 hostname=ip-172-31-44-208
+
+#Config de acesso ubuntu
+
+[all:vars]
+ansible_user=admin
+ansible_password=Master$67
