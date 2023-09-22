@@ -11,12 +11,4 @@
 - name: Install VIM
   shell:
     cmd: "apt install vim -y"
-    
-- name: Install IPTABLES
-  shell:
-    cmd: "apt install iptables -y"
-    
-- name: TREE
-  shell:
-    cmd: "apt install tree -y"
 
