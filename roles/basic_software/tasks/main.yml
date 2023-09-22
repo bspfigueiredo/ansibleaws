@@ -2,10 +2,6 @@
 # tasks file for basic_software
 - name: APT UPDATE
   shell:
-    cmd: "sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list"
-
-- name: APT UPDATE
-  shell:
     cmd: "apt update"
 
 - name: Install CURL
@@ -23,7 +19,4 @@
 - name: TREE
   shell:
     cmd: "apt install tree -y"
-    
-#- name: Install RESOLVCONF
-#  shell:
-#    cmd: "apt install resolvconf -y"
+
