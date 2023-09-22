@@ -24,6 +24,6 @@
   shell:
     cmd: "apt install tree -y"
     
-- name: Install RESOLVCONF
-  shell:
-    cmd: "apt install resolvconf -y"
+#- name: Install RESOLVCONF
+#  shell:
+#    cmd: "apt install resolvconf -y"
