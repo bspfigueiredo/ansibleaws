@@ -1,12 +1,8 @@
 ---
 # tasks file for redis
-- name: install lsb-release
+- name: install lsb-release, curl and gpg
   shell:
-    cmd: "apt-get install -y lsb-release"
-
-- name: install gnupg
-  shell:
-    cmd: "apt-get install -y gnupg"
+    cmd: "apt install -y lsb-release curl gpg"
 
 - name: download redis
   shell:  
