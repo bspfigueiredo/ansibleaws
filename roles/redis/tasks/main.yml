@@ -1,8 +1,12 @@
 ---
 # tasks file for redis
-- name: install lsb-release, curl and gpg
+- name: install lsb-release curl gpg
   shell:
-    cmd: "apt install -y lsb-release curl gpg"
+    cmd: "sudo apt install -y lsb-release curl gpg"
+
+- name: install gnupg
+  shell:
+    cmd: "apt-get install -y gnupg"
 
 - name: download redis
   shell:  
@@ -11,10 +15,14 @@
 - name: redis list
   shell:
     cmd: 'echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/redis.list'
+    
+- name: apt update
+  shell:
+    cmd: "apt-get update"
 
 - name: install redis
   shell:
-    cmd: "apt install -y redis"
+    cmd: "apt-get install -y redis"
     
 - name: enable redis
   shell:
