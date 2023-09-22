@@ -1,8 +1,8 @@
 ---
 # tasks file for redis
-- name: install lsb-release gnupg
+- name: install lsb-release
   shell:
-    cmd: "apt install lsb-release gnupg"
+    cmd: "apt-get install -y lsb-release"
 
 - name: install gnupg
   shell:
