@@ -11,10 +11,6 @@
 - name: redis list
   shell:
     cmd: 'echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/redis.list'
-    
-- name: apt update
-  shell:
-    cmd: "sudo apt-get update"
 
 - name: install redis
   shell:
