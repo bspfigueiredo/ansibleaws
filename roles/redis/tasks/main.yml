@@ -14,7 +14,7 @@
     
 - name: apt update
   shell:
-    cmd: "apt update"
+    cmd: "sudo apt-get update"
 
 - name: install redis
   shell:
