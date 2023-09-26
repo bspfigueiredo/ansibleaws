@@ -1,16 +1,17 @@
 [control_planes]
-13.39.16.63 hostname=ip-172-31-43-13.eu-west-3.compute.internal
+Controlplane1 ansible_host=13.39.16.63 hostname=ip-172-31-43-13.eu-west-3.compute.internal
 
 [worker_nodes]
-13.38.62.201 hostname=ip-172-31-36-38.eu-west-3.compute.internal
-13.39.110.197 hostname=ip-172-31-38-153.eu-west-3.compute.internal
-35.180.30.165 hostname=ip-172-31-43-71.eu-west-3.compute.internal
+workernode1 ansible_host=13.38.62.201 hostname=ip-172-31-36-38.eu-west-3.compute.internal
+workernode2 ansible_host=13.39.110.197 hostname=ip-172-31-38-153.eu-west-3.compute.internal
+workernode3 ansible_host=35.180.30.165 hostname=ip-172-31-43-71.eu-west-3.compute.internal
 
 [redis]
-15.188.48.233 hostname=ip-172-31-43-154.eu-west-3.compute.internal
+redis1 ansible_host=15.188.48.233 hostname=ip-172-31-43-154.eu-west-3.compute.internal
 
 [rabbitmq]
-13.38.93.146 hostname=ip-172-31-39-48.eu-west-3.compute.internal
+rabbitmq1 ansible_host=13.38.93.146 hostname=ip-172-31-39-48.eu-west-3.compute.internal
+
 
 #Config de acesso ubuntu
 
