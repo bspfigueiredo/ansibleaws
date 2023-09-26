@@ -5,4 +5,4 @@
   roles:
     - basic_software
     - worker_nodes
-    - control_plane    
+    - control_planes
