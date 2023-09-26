@@ -1,0 +1,25 @@
+---
+# tasks file for basic_software
+- name: APT UPDATE
+  shell:
+    cmd: "apt update"
+
+- name: Install CURL
+  shell:
+    cmd: "apt install curl -y"
+    
+- name: Install VIM
+  shell:
+    cmd: "apt install vim -y"
+    
+#- name: Install IPTABLES
+#  shell:
+#    cmd: "apt install iptables -y"
+#    
+#- name: TREE
+#  shell:
+#    cmd: "apt install tree -y"
+#    
+#- name: Install RESOLVCONF
+#  shell:
+#    cmd: "apt install resolvconf -y"

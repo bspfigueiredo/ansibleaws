@@ -1,0 +1,9 @@
+
+[redis]
+13.36.210.20 hostname=ip-172-31-40-38.eu-west-3.compute.internal
+
+#Config de acesso ubuntu
+
+[all:vars]
+ansible_user=admin
+ansible_password=Master$67

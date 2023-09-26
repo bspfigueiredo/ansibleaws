@@ -1,0 +1,7 @@
+---
+- hosts: rabbitmq
+  become: true
+
+  roles:
+    - basic_software
+    - rabbitmq
